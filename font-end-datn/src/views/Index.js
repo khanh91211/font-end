@@ -18,7 +18,6 @@ import {
   chartOptions,
   parseOptions,
   chartExample1,
-  chartExample2,
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
@@ -42,15 +41,12 @@ const Index = (props) => {
       {/* Page content */}
       <Container className="mt--7" fluid>
         <Row>
-          <Col className="mb-5 mb-xl-0" xl="8">
+          <Col className="mb-5 mb-xl-0" xl="12">
             <Card className="bg-gradient-default shadow">
               <CardHeader className="bg-transparent">
                 <Row className="align-items-center">
                   <div className="col">
-                    <h6 className="text-uppercase text-light ls-1 mb-1">
-                      Overview
-                    </h6>
-                    <h2 className="text-white mb-0">Sales value</h2>
+                    <h2 className="text-white mb-0">Lượt truy cập</h2>
                   </div>
                   <div className="col">
                     <Nav className="justify-content-end" pills>
@@ -62,7 +58,7 @@ const Index = (props) => {
                           href="#pablo"
                           onClick={(e) => toggleNavs(e, 1)}
                         >
-                          <span className="d-none d-md-block">Month</span>
+                          <span className="d-none d-md-block">Tháng</span>
                           <span className="d-md-none">M</span>
                         </NavLink>
                       </NavItem>
@@ -75,7 +71,7 @@ const Index = (props) => {
                           href="#pablo"
                           onClick={(e) => toggleNavs(e, 2)}
                         >
-                          <span className="d-none d-md-block">Week</span>
+                          <span className="d-none d-md-block">Tuần</span>
                           <span className="d-md-none">W</span>
                         </NavLink>
                       </NavItem>
@@ -90,29 +86,6 @@ const Index = (props) => {
                     data={chartExample1[chartExample1Data]}
                     options={chartExample1.options}
                     getDatasetAtEvent={(e) => console.log(e)}
-                  />
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col xl="4">
-            <Card className="shadow">
-              <CardHeader className="bg-transparent">
-                <Row className="align-items-center">
-                  <div className="col">
-                    <h6 className="text-uppercase text-muted ls-1 mb-1">
-                      Performance
-                    </h6>
-                    <h2 className="mb-0">Total orders</h2>
-                  </div>
-                </Row>
-              </CardHeader>
-              <CardBody>
-                {/* Chart */}
-                <div className="chart">
-                  <Bar
-                    data={chartExample2.data}
-                    options={chartExample2.options}
                   />
                 </div>
               </CardBody>

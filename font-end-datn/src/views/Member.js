@@ -9,7 +9,7 @@ import {
 // core components
 import Header from "components/Headers/Header.js";
 
-const Category = () => {
+const Member = () => {
   return (
     <>
       <Header />
@@ -20,7 +20,7 @@ const Category = () => {
           <div className="col">
             <Card className="shadow">
               <CardHeader className="bg-transparent">
-                <h3 className="mb-0">Người dùng</h3>
+                <h3 className="mb-0">Danh mục</h3>
               </CardHeader>
               <CardBody>
                 <Row className="icon-examples">
@@ -37,4 +37,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default Member;

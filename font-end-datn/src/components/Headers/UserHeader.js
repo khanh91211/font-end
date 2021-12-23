@@ -26,13 +26,6 @@ const UserHeader = () => {
                 Đây là trang hồ sơ của bạn. Bạn có thể thấy những tiến bộ mà bạn đã đạt được
                 với công việc của bạn và quản lý các dự án hoặc nhiệm vụ được giao của bạn.
               </p>
-              <Button
-                color="info"
-                href=""
-                onClick={(e) => e.preventDefault()}
-              >
-                Chỉnh sửa
-              </Button>
             </Col>
           </Row>
         </Container>
